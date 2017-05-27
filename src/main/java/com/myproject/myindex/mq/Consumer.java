@@ -1,5 +1,7 @@
 package com.myproject.myindex.mq;
 
+import java.util.Map;
+
 import net.sf.json.JSONObject;
 
 import org.springframework.jms.annotation.JmsListener;
@@ -18,7 +20,7 @@ public class Consumer {
         System.out.println(user.getUsername());
     }
     @JmsListener(destination = "sample.queuetwo")
-    public void receiveQueueTwo(String text) {
-    	User user=(User) JSONObject.toBean(JSONObject.fromObject(text), User.class);
-        System.out.println(user.getUsername());    }
+    public void receiveQueueTwo(Map<String, Object> text) {
+        System.out.println(text.get("username"));   
+     }
 }

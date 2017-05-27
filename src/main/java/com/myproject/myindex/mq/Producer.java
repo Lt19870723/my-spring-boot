@@ -38,7 +38,7 @@ public class Producer {
         use1.setUsername("lihua");
         use1.setPassword("lihua");
         use1.setSex("女");
-        this.jmsMessagingTemplate.convertAndSend(this.queuetwo, JSONObject.fromObject(use1).toString());
+        this.jmsMessagingTemplate.convertAndSend(this.queuetwo, JSONObject.fromObject(use1));
 
     }
 
