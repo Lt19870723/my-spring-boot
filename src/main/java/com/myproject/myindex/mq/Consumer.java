@@ -5,9 +5,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 消息消费者.
- * @author Angel --守护天使
- * @version v.0.1
- * @date 2016年8月23日
  */
 @Component
 public class Consumer {

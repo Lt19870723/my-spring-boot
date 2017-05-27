@@ -10,9 +10,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 消息生产者.
- * @author Angel --守护天使
- * @version v.0.1
- * @date 2016年8月23日
  */
 @Component
 @EnableScheduling
