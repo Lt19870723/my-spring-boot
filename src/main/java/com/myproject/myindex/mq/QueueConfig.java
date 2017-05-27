@@ -9,7 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class QueueConfig {
     @Bean
-    public Queue queue() {
-        return new ActiveMQQueue("sample.queue");
+    public Queue queueone() {
+        return new ActiveMQQueue("sample.queueone");
+    }
+    
+    @Bean
+    public Queue queuetwo() {
+        return new ActiveMQQueue("sample.queuetwo");
     }
 }

@@ -11,8 +11,12 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Consumer {
-    @JmsListener(destination = "sample.queue")
-    public void receiveQueue(String text) {
+    @JmsListener(destination = "sample.queueone")
+    public void receiveQueueOne(String text) {
+        System.out.println(text);
+    }
+    @JmsListener(destination = "sample.queuetwo")
+    public void receiveQueueTwo(String text) {
         System.out.println(text);
     }
 }
