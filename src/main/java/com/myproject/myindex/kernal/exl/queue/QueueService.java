@@ -17,7 +17,7 @@ public interface QueueService {
 
     /**
      * 修改
-     * @param queue
+     * @param queId
      * @return
      */
     public void delete(String queId);
