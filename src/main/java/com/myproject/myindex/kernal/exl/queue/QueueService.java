@@ -22,7 +22,7 @@ public interface QueueService {
      */
     public void delete(String queId);
 
-    //public List<Queue> selectQueue(String queueType, String dataType, List<String> statusList, Date expectTime);
+    public List<Queue> selectQueue(String queueType, String dataType, List<String> statusList, Date expectTime);
 
     public List<Queue> selectQueue(List<QueueStatusType> statusList, Date expectTime);
 }
