@@ -15,8 +15,8 @@
     <parent>  
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-starter-parent</artifactId>  
-        <version>1.4.0.RELEASE</version>  
-        <relativePath></relativePath>  
+        <version>1.5.4.RELEASE</version>
+        <relativePath></relativePath>
     </parent>  
   
     <!-- spring-boot的web启动的jar包 -->  
@@ -31,10 +31,10 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>  
         </dependency>  
         <!--mysql驱动 -->  
-        <dependency>  
+        <dependency>
             <groupId>mysql</groupId>  
             <artifactId>mysql-connector-java</artifactId>  
-        </dependency>  
+        </dependency>
   
         <!--配置servlet-->  
         <dependency>  
